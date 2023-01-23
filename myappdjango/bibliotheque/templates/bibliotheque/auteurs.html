@@ -1,0 +1,11 @@
+{% extends "./base_generic.html" %}
+
+{% block content %}
+    <div class="content">
+        <ul class="ul_style">
+        {% for auteur in auteurs_list %}
+            <li><a href="/bibliotheque/auteurs/{{ auteur.nom }}">{{ auteur.prenom }} {{ auteur.nom}}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

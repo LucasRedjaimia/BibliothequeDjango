@@ -1,0 +1,13 @@
+{% extends "./base_generic.html" %}
+
+{% block content %}
+<div class="profil_content">
+    <img class="profil" src="{{ auteur.photo }}">
+    <div class="infos">
+        <h2>Nom:</h2>
+        <p>{{auteur.nom}} {{auteur.prenom}}<p/>
+        <h2>contact:</h2>
+        <p>{{ auteur.email }}<p/>
+    </div>
+</div>
+{% endblock %}

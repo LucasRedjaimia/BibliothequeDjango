@@ -1,0 +1,17 @@
+{% extends "./base_generic.html" %}
+
+{% block navbar %}
+    <select class="searchbox" name="livre">
+        <option input=""></option>
+    </select>
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <ul class="ul_style">
+        {% for livre in livre_list %}
+            <li><a href="/bibliotheque/livres/{{ livre.id }}">{{ livre.nom }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

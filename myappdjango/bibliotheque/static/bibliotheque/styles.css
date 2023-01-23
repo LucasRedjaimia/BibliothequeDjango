@@ -1,0 +1,138 @@
+body {
+    background-color: rgb(70, 95, 122);
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav {
+    display: none;
+}
+
+.profil_pic {
+    max-height: 150px;
+    width: auto;
+}
+
+.content {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ul_style {
+    width: 100%;
+    display: flex;
+    justify-content: inherit;
+    flex-wrap: wrap;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.ul_style li {
+    text-decoration: none;
+    padding: 20px 10px;
+    margin: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    transition: all .2s;
+    border-radius: 10px;
+}
+
+.ul_style li:hover {
+    background-color: #E1D7C6;
+}
+
+.ul_style li a {
+    color: black;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.navbar {
+    background-color: #F8F4EA;
+    width: 100%;
+    display: block;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 100px;
+    transition: all .2s;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+li.titre {
+    border: none;
+}
+
+.titre a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(62, 62, 62);
+}
+
+.navbar li:hover {
+    background-color: #E1D7C6;
+}
+
+li.titre:hover {
+    background-color: transparent;
+}
+
+.navbar li h1 {
+    text-transform: uppercase;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    transition: all .2s;
+}
+
+.container {
+    width: 100%;
+    padding: 0 50px;
+    color: white;
+}
+
+.profil_content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #F8F4EA;
+    color: black;
+    border-radius: 30px;
+    padding: 0 100px;
+    height: 600px;
+}
+
+.profil_content img {
+    clip-path: circle(200px);
+    width: 400px;
+    overflow: hidden;
+}
+
+.infos {
+    margin-left: 50px;
+}
+
+.lien_auteur {
+    color: white;
+}
+
+
+.searchbox {
+    min-width: 200px !important;
+}
+
+.select2-container {
+    min-width: 200px !important;
+}
